@@ -37,14 +37,14 @@ Before using the File Integrity Checker, ensure the following:
 ## Setup and Usage
 
 1. **Save the Script**:
-   - Copy the provided Python code into a file named `file_integrity_checker.py`.
+   - Copy the provided Python code into a file named `fileintegritychecker.py`.
 
 2. **Run the Script**:
    - Open a terminal or command prompt.
    - Navigate to the directory where the script is saved.
    - Run the script:
      ```bash
-     python file_integrity_checker.py
+     python fileintegritychecker.py
      ```
 
 3. **Generate a Hash**:
@@ -68,13 +68,13 @@ Before using the File Integrity Checker, ensure the following:
 
 2. Run the script and generate a hash:
    ```bash
-   python file_integrity_checker.py
+   python fileintegritychecker.py
    ```
    - Choose option `1` and enter `example.txt`.
 
 3. Verify the file integrity:
    ```bash
-   python file_integrity_checker.py
+   python fileintegritychecker.py
    ```
    - Choose option `2` and enter `example.txt`.
    - The script will confirm that the file is intact.
@@ -82,7 +82,7 @@ Before using the File Integrity Checker, ensure the following:
 4. Modify the file and check again:
    ```bash
    echo "This file has been modified." >> example.txt
-   python file_integrity_checker.py
+   python fileintegritychecker.py
    ```
    - Choose option `2` and enter `example.txt`.
    - The script will warn that the file has been manipulated.
