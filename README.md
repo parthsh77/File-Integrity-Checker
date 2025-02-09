@@ -64,3 +64,58 @@ Before using the File Integrity Checker, ensure the following:
 1. Create a test file:
    ```bash
    echo "This is a test file." > example.txt
+   ```
+
+2. Run the script and generate a hash:
+   ```bash
+   python file_integrity_checker.py
+   ```
+   - Choose option `1` and enter `example.txt`.
+
+3. Verify the file integrity:
+   ```bash
+   python file_integrity_checker.py
+   ```
+   - Choose option `2` and enter `example.txt`.
+   - The script will confirm that the file is intact.
+
+4. Modify the file and check again:
+   ```bash
+   echo "This file has been modified." >> example.txt
+   python file_integrity_checker.py
+   ```
+   - Choose option `2` and enter `example.txt`.
+   - The script will warn that the file has been manipulated.
+
+---
+
+## Optional Enhancements
+
+1. **Automate Hash Generation**:
+   - Modify the script to automatically generate hashes for all files in a directory.
+
+2. **Real-Time Monitoring**:
+   - Use the `watchdog` library to monitor files in real-time and alert if any changes are detected.
+
+3. **GUI**:
+   - Add a graphical user interface using `tkinter` or `PyQt` for easier interaction.
+
+4. **Database Integration**:
+   - Store hashes in a database (e.g., SQLite) for better management of multiple files.
+
+---
+
+## Troubleshooting
+
+1. **File Not Found**:
+   - Ensure the file path is correct and the file exists.
+
+2. **Permission Issues**:
+   - Run the script with appropriate permissions to read/write files.
+
+3. **Python Not Recognized**:
+   - Ensure Python is added to your system's PATH during installation.
+
+---
+
+This project is a great way to learn about file integrity, hashing, and basic cybersecurity concepts. Feel free to contribute or suggest improvements!
