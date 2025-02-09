@@ -1,6 +1,34 @@
 import hashlib
 import os
 
+banner = r"""
+        ______
+     .-'      `-.
+    /            \
+   |              |
+   |,  .-.  .-.  ,|
+   | )(_o/  \o_)( |
+   |/     /\     \|
+   (_     ^^     _)
+    \__|IIIIII|__/
+     | \IIIIII/ |
+     \          /
+      `--------`
+
+██████╗  █████╗ ██████╗ ████████╗██╗  ██╗
+██╔══██╗██╔══██╗██╔══██╗╚══██╔══╝██║  ██║
+██████╔╝███████║██████╔╝   ██║   ███████║
+██╔═══╝ ██╔══██║██╔══██╗   ██║   ██╔══██║
+██║     ██║  ██║██║  ██║   ██║   ██║  ██║
+╚═╝     ╚═╝  ╚═╝╚═╝  ╚═╝   ╚═╝   ╚═╝  ╚═╝
+                                         
+"""
+# Pipe the banner output to lolcat for colorized text
+os.system(f'echo "{banner}" | lolcat')
+
+print(banner)
+
+
 def calculate_file_hash(file_path, algorithm='sha256'):
     """Calculate the hash of a file using the specified algorithm."""
     hash_func = hashlib.new(algorithm)
