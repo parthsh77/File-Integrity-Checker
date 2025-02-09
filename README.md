@@ -1,128 +1,66 @@
-# File-Integrity-Checker
+# File Integrity Checker
 
-Prerequisites
+The **File Integrity Checker** is a simple and self-contained Python project designed to help you verify the integrity of files using cryptographic hashes. It is beginner-friendly and works on both Linux and Windows systems.
 
-    Python Installation:
+---
 
-        Ensure Python 3.x is installed on your system.
+## Table of Contents
+- [Prerequisites](#prerequisites)
+- [Setup and Usage](#setup-and-usage)
+- [Example Workflow](#example-workflow)
+- [Optional Enhancements](#optional-enhancements)
+- [Troubleshooting](#troubleshooting)
 
-        Download and install Python from the official website: python.org.
+---
 
-    Operating System:
+## Prerequisites
 
-        The script works on both Linux and Windows.
+Before using the File Integrity Checker, ensure the following:
 
-    Text Editor or IDE:
+1. **Python Installation**:
+   - Python 3.x must be installed on your system. Download it from the official website: [python.org](https://www.python.org/).
 
-        Use a text editor (e.g., Notepad++, VS Code, Sublime Text) or an IDE (e.g., PyCharm) to write and run the script.
+2. **Operating System**:
+   - The script is compatible with **Linux** and **Windows**.
 
-    Basic Python Knowledge:
+3. **Text Editor or IDE**:
+   - Use a text editor (e.g., Notepad++, VS Code, Sublime Text) or an IDE (e.g., PyCharm) to write and run the script.
 
-        Familiarity with Python basics (e.g., running scripts, understanding functions, and file handling) will help you understand and modify the code.
+4. **Basic Python Knowledge**:
+   - Familiarity with Python basics (e.g., running scripts, functions, and file handling) is recommended.
 
-    File to Test:
+5. **File to Test**:
+   - Prepare a file (e.g., `example.txt`) to test the integrity checker.
 
-        Have a file ready (e.g., example.txt) to test the integrity checker.
+---
 
-Steps to Set Up and Use the Project
+## Setup and Usage
 
-    Save the Script:
+1. **Save the Script**:
+   - Copy the provided Python code into a file named `file_integrity_checker.py`.
 
-        Copy the provided Python code into a file named file_integrity_checker.py.
+2. **Run the Script**:
+   - Open a terminal or command prompt.
+   - Navigate to the directory where the script is saved.
+   - Run the script:
+     ```bash
+     python file_integrity_checker.py
+     ```
 
-    Run the Script:
+3. **Generate a Hash**:
+   - Choose option `1` to generate and save the hash of a file.
+   - Provide the path to the file (e.g., `example.txt`).
+   - The script will save the hash in a `.hash` file (e.g., `example.txt.hash`).
 
-        Open a terminal or command prompt.
+4. **Check File Integrity**:
+   - Choose option `2` to check the integrity of the file.
+   - Provide the path to the file (e.g., `example.txt`).
+   - The script will compare the current hash with the stored hash and notify you if the file has been manipulated.
 
-        Navigate to the directory where the script is saved.
+---
 
-        Run the script:
-        bash
-        Copy
+## Example Workflow
 
-        python file_integrity_checker.py
-
-    Generate a Hash:
-
-        Choose option 1 to generate and save the hash of a file.
-
-        Provide the path to the file (e.g., example.txt).
-
-        The script will save the hash in a .hash file (e.g., example.txt.hash).
-
-    Check File Integrity:
-
-        Choose option 2 to check the integrity of the file.
-
-        Provide the path to the file (e.g., example.txt).
-
-        The script will compare the current hash with the stored hash and notify you if the file has been manipulated.
-
-Example Workflow
-
-    Create a test file:
-    bash
-    Copy
-
-    echo "This is a test file." > example.txt
-
-    Run the script and generate a hash:
-    bash
-    Copy
-
-    python file_integrity_checker.py
-
-        Choose option 1 and enter example.txt.
-
-    Verify the file integrity:
-    bash
-    Copy
-
-    python file_integrity_checker.py
-
-        Choose option 2 and enter example.txt.
-
-        The script will confirm that the file is intact.
-
-    Modify the file and check again:
-    bash
-    Copy
-
-    echo "This file has been modified." >> example.txt
-    python file_integrity_checker.py
-
-        Choose option 2 and enter example.txt.
-
-        The script will warn that the file has been manipulated.
-
-Optional Enhancements
-
-    Automate Hash Generation:
-
-        Modify the script to automatically generate hashes for all files in a directory.
-
-    Real-Time Monitoring:
-
-        Use the watchdog library to monitor files in real-time and alert if any changes are detected.
-
-    GUI:
-
-        Add a graphical user interface using tkinter or PyQt for easier interaction.
-
-    Database Integration:
-
-        Store hashes in a database (e.g., SQLite) for better management of multiple files.
-
-Troubleshooting
-
-    File Not Found:
-
-        Ensure the file path is correct and the file exists.
-
-    Permission Issues:
-
-        Run the script with appropriate permissions to read/write files.
-
-    Python Not Recognized:
-
-        Ensure Python is added to your system's PATH during installation.
+1. Create a test file:
+   ```bash
+   echo "This is a test file." > example.txt
