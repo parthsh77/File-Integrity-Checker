@@ -117,5 +117,6 @@ Before using the File Integrity Checker, ensure the following:
    - Ensure Python is added to your system's PATH during installation.
 
 ---
+## Support
+For any issues or questions, please open an issue on the [GitHub repository](https://github.com/your-username/DOS-DETECTION/issues).
 
-This project is a great way to learn about file integrity, hashing, and basic cybersecurity concepts. Feel free to contribute or suggest improvements!
